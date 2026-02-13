@@ -1,33 +1,22 @@
-# CHECKLIST LNC - Lanternagem e Pintura
+# CHECKLIST LNC CENTRO AUTOMOTIVO
 
-## 📋 Sistema de Checklist para Oficina
+Sistema de checklist de entrada e inspeção veicular para LNC Centro Automotivo
 
-Sistema completo de checklist e ordem de serviço para a oficina LNC Lanternagem e Pintura.
+## Informações da Oficina
+- **Nome:** LNC Centro Automotivo LTDA
+- **CNPJ:** 23.074.788/0001-86
+- **Endereço:** Av. João XXIII, 320 - Alipio de Melo - Belo Horizonte/MG
+- **CEP:** 30.820-632
+- **Telefone:** (31) 3423-8844
 
-### 🎨 Identidade Visual
-- Cores: Amarelo dourado (#f4b740) e cinza (#6b6b5c)
-- Logo: LNC Lanternagem e Pintura
-- Localização: Av João XXIII - 320
+## Características
+- Sistema offline-first com sincronização na nuvem
+- Geração de PDF com checklist completo
+- Gestão de peças e serviços
+- Captura de fotos do veículo
+- Histórico de atendimentos
 
-### ⚙️ Funcionalidades
-- ✅ Checklist de entrada de veículos
-- 📸 Captura e gerenciamento de fotos
-- 💰 Orçamento de peças e serviços
-- 📄 Geração de PDF com ordem de serviço
-- 💾 Salvamento local e sincronização em nuvem
-- 📊 Relatórios e estatísticas
-
-### 🚀 Como Usar
-1. Abra o arquivo `index.html` em um navegador
-2. Preencha os dados do veículo no passo 1
-3. Complete a inspeção visual no passo 2
-4. Adicione dados do cliente no passo 3
-5. Inclua peças e serviços na aba correspondente
-6. Tire fotos do veículo
-7. Gere o PDF final
-
-### 📱 PWA - App Instalável
-Este sistema funciona como Progressive Web App (PWA), podendo ser instalado em dispositivos móveis e computadores.
-
----
-**Desenvolvido para LNC Lanternagem e Pintura**
+## Tecnologias
+- HTML5 + CSS3 + JavaScript Vanilla
+- Firebase (opcional para sincronização)
+- html2pdf.js para geração de PDFs
