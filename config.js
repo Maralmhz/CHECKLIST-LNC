@@ -1,26 +1,40 @@
 // ============================================
-// CONFIG.JS - TEMPLATE COMPLETO NEUTRO
+// CONFIG.JS - LNC CENTRO AUTOMOTIVO
 // ============================================
-// Para usar: Edite apenas os valores entre aspas
-// Depois de editar, substitua logo.png pela logo da oficina
+// Configurações centralizadas da oficina
+// Atualizado: 13/02/2026
 
 window.OFICINA_CONFIG = {
     // === INFORMAÇÕES DA OFICINA ===
-    nome: "OFICINA",                                    // Nome principal
-    subtitulo: "CHECKLIST DE ENTRADA E INSPEÇÃO",       // Subtítulo header
-    cnpj: "00.000.000/0000-00",                         // CNPJ
-    oficinaId: "oficina_demo",                          // ID da oficina no Firebase (ex: oficina_do_joao)
+    nome: "LNC CENTRO AUTOMOTIVO",
+    subtitulo: "LANTERNAGEM E PINTURA - CHECKLIST DE ENTRADA E INSPEÇÃO",
+    cnpj: "23.074.788/0001-86",
+    oficinaId: "lnc_centro_automotivo",
 
     // === CONTATOS ===
-    telefone: "(00) 00000-0000",                        // Telefone fixo
-    whatsapp: "(00) 00000-0000",                        // WhatsApp principal
-    telefone2: "(00) 0000-0000",                        // Telefone 2 (opcional)
+    telefone: "(31) 3423-8844",
+    whatsapp: "(31) 3423-8844",
+    telefone2: "(31) 8784-2528",
 
     // === ENDEREÇO ===
-    endereco: "RUA EXEMPLO, 000 - BAIRRO - CIDADE/UF",  // Endereço completo
-    cep: "00000-000",                                   // CEP
+    endereco: "AV. JOÃO XXIII, 320 - ALIPIO DE MELO - BELO HORIZONTE/MG",
+    cep: "30.820-632",
 
     // === IDENTIDADE VISUAL ===
-    logo: "logo.png",                                   // Caminho do logo
-    corPrimaria: "#0d6efd"                              // Cor principal
+    logo: "logo.png",
+    corPrimaria: "#c49b4d",  // Dourado da logo LNC
+    corSecundaria: "#6b6b5d", // Cinza/Verde da logo
+
+    // === FIREBASE (Opcional - Configure depois) ===
+    firebase: {
+        enabled: true,
+        oficinaId: "lnc_centro_automotivo"
+    }
 };
+
+// ============================================
+// APLICAR COR PRIMÁRIA AUTOMATICAMENTE
+// ============================================
+if (window.OFICINA_CONFIG.corPrimaria) {
+    document.documentElement.style.setProperty('--color-primary', window.OFICINA_CONFIG.corPrimaria);
+}
