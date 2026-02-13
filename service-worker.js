@@ -1,6 +1,6 @@
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open('oficina-lnc-v1').then(cache => {
+    caches.open('oficina-v1').then(cache => {
       return cache.addAll([
         '/',
         '/index.html',

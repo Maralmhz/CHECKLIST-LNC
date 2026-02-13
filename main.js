@@ -116,7 +116,7 @@ async function carregarHistorico() {
         card.innerHTML = `
             <div class="checklist-info">
                 <h4 style="margin:0; color:#333;">${(item.placa || 'SEM PLACA').toUpperCase()} - ${item.modelo || 'Modelo não inf.'}</h4>
-                <p style="margin:5px 0 0 0; font-size:12px; color:#666;">${dataFormatada} às ${horaFormatada} • ${item.nome_cliente || 'Cliente não inf.'}</p>
+                <p style="margin:5px 0 0 0; font-size:12px; color:#666;">${dataFormatada} às ${horaFormatada} • ${item.nomecliente || 'Cliente não inf.'}</p>
             </div>
             <div class="checklist-actions" style="display:flex; gap:10px;">
                 <button class="btn-small btn-secondary" onclick="carregarChecklist(${item.id})">✏️ Editar</button>
